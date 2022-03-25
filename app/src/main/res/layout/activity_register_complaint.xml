@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDE0E0"
+    tools:context=".Register_Complaint">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:background="#EACECE"
+                android:text="Enter Culprit Details:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Crime Type"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="19dp" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="184dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="64dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="64dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/culprit_name"
+                    android:layout_width="358dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="Culprit Name(optional)"
+                    android:inputType="textPersonName"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/culprit_age"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="Culprit age(optional)"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Gender"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp" />
+
+                <RadioGroup
+                    android:id="@+id/genderGroup"
+                    android:layout_width="183dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/maleRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/femaleRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Female" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/details"
+                    android:layout_width="359dp"
+                    android:layout_height="71dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Enter Brief Details of complaint"
+                    android:inputType="textMultiLine"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Live location"
+                    android:layout_marginLeft="10dp" />
+
+                <fragment
+                    android:id="@+id/Google_map"
+                    android:layout_width="360dp"
+                    android:layout_height="400dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="184dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="184dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="64dp"
+                    android:layout_marginRight="64dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/phone_no"
+                    android:layout_width="342dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="Your mobile number"
+                    android:inputType="number|phone"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_width="349dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Register"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="34dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

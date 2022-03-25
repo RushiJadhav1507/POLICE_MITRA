@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "368090676002",
+    "project_id": "policemitra2021-16f4b",
+    "storage_bucket": "policemitra2021-16f4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368090676002:android:09b2d0e87e6aa28edc037b",
+        "android_client_info": {
+          "package_name": "com.example.police_mitra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368090676002-sg2s077b144kt5g5vilknao2gfpib7dl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_DASWwXppwqEk2Ui1WAEh0SeOk2ZlEr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368090676002-sg2s077b144kt5g5vilknao2gfpib7dl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

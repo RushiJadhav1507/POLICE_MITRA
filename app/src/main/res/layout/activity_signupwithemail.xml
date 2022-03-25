@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/perfect"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="POLICE MITRA MAHARASHTRA"
+        android:textSize="22dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/police2" />
+
+    <EditText
+        android:id="@+id/signupmail"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="270dp"
+
+        android:inputType="textEmailAddress"
+        android:hint="Enter valid Email" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="15dp"
+
+        android:hint="Build your password"
+
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"
+        android:textColorHint="#FFFF"
+        android:text="SIGN UP" />
+
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="470dp"
+        android:layout_marginRight="80dp"
+        android:text="Already have an account?Login"
+        android:textColor="#FFFF"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>

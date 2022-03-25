@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.police_mitra">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Police Mitra"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.POLICE_MITRA">
+        <activity
+            android:name=".Criminals2"
+            android:exported="true" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity2"
+            android:exported="true"
+            android:label="@string/title_activity_maps2" />
+        <activity
+            android:name=".ViewFullComplaint"
+            android:exported="true" />
+        <activity android:name=".Complainsss" />
+        <activity
+            android:name=".ComplaintList"
+            android:exported="true" />
+        <activity
+            android:name=".ViewBranch"
+            android:exported="true" />
+        <activity
+            android:name=".ViewCity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".update"
+            android:exported="true" />
+        <activity
+            android:name=".Status"
+            android:exported="true" />
+        <activity
+            android:name=".signupwithemail"
+            android:exported="true" />
+        <activity
+            android:name=".Signup_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Register_Complaint"
+            android:exported="true" />
+        <activity
+            android:name=".Profile"
+            android:exported="true" />
+        <activity
+            android:name=".Menu_Citizen"
+            android:exported="true" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".CitizenloginActivity"
+            android:exported="true" />
+        <activity android:name=".Criminal_Profile_Update" />
+        <activity android:name=".Criminal_Details" />
+        <activity android:name=".Criminals" />
+        <activity android:name=".ViewNoti" />
+        <activity android:name=".viewfullnoti" />
+        <activity android:name=".MainMenu" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".GoINotification" />
+        <activity android:name=".forgetpass" />
+        <activity android:name=".adminlogin" />
+        <activity android:name=".login" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

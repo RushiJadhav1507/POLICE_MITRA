@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#040404"
+    tools:context=".Criminal_Profile_Update">
+
+    <ScrollView
+        android:layout_width="357dp"
+        android:layout_height="677dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="70dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintTop_toBottomOf="@+id/Btn_Submit" />
+
+            <Button
+                android:id="@+id/Btn_Submit"
+                android:layout_width="118dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:onClick="SubmitData"
+                android:text="Submit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ET_City" />
+
+            <EditText
+                android:id="@+id/ET_City"
+                android:layout_width="316dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="City"
+                android:inputType="textPersonName"
+                android:textColor="#FBFBFB"
+                android:textColorHint="#A89F9F"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.487"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ET_Identity" />
+
+            <EditText
+                android:id="@+id/ET_Identity"
+                android:layout_width="308dp"
+                android:layout_height="92dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Identity Remarks"
+                android:inputType="textMultiLine"
+                android:textColor="#FBFBFB"
+                android:textColorHint="#A8A1A1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ET_Booked" />
+
+            <EditText
+                android:id="@+id/ET_Booked"
+                android:layout_width="313dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="Booked Under"
+                android:inputType="textPersonName"
+                android:textColor="#FBFBFB"
+                android:textColorHint="#9F9797"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ET_Age" />
+
+            <EditText
+                android:id="@+id/ET_Age"
+                android:layout_width="313dp"
+                android:layout_height="78dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="number"
+                android:textColor="#FBFBFB"
+                android:textColorHint="#8A8484"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ET_Criminal_Name" />
+
+            <EditText
+                android:id="@+id/ET_Criminal_Name"
+                android:layout_width="304dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="Name of Criminal"
+                android:inputType="textPersonName"
+                android:textColor="#FBFBFB"
+                android:textColorHint="#A8A0A0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.461"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ET_Criminal_ID" />
+
+            <ImageButton
+                android:id="@+id/Criminal_Image"
+                android:layout_width="305dp"
+                android:layout_height="297dp"
+                android:layout_marginTop="56dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.596"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/profile" />
+
+            <EditText
+                android:id="@+id/ET_Criminal_ID"
+                android:layout_width="304dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Criminal ID"
+                android:inputType="textPersonName"
+                android:textColor="#FBFBFB"
+                android:textColorHint="#B1A8A8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Criminal_Image" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

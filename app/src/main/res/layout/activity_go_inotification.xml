@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".GoINotification">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/subnoti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:text="Subject of Notification"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+            android:id="@+id/esubnoti"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/subnoti"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Notification Subject "
+            android:textColor="@color/white"
+            android:textColorHint="#B6ADAD"></EditText>
+
+
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/esubnoti"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginRight="10dp"
+            android:text="Date"
+
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+            android:id="@+id/edate"
+            android:layout_width="393dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvdate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="10dp"
+            android:editable="false"
+            android:hint="Enter Date Of Notification"
+            android:textColor="@color/white"
+            android:textColorHint="#A39A9A">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvdesp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="10dp"
+            android:text="Description"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+            android:id="@+id/edesp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/tvdesp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Detailed Description Of Notification"
+            android:textColor="@color/white"
+            android:textColorHint="#9C9595"></EditText>
+
+        <TextView
+            android:id="@+id/tvnotifrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edesp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="10dp"
+            android:text="Notification from"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+            android:id="@+id/enotifrom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tvnotifrom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Notification From"
+            android:textColor="@color/white"
+            android:textColorHint="#9C9696"></EditText>
+
+        <Button
+            android:id="@+id/butvan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enotifrom"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="106dp"
+            android:layout_marginLeft="106dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="89dp"
+            android:layout_marginRight="89dp"
+            android:text="Veiw All Notification"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/purple_700"></Button>
+
+        <Button
+            android:id="@+id/butsub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/butvan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Submit"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/purple_700"></Button>
+
+    </RelativeLayout>
+</ScrollView>
